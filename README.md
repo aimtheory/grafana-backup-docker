@@ -1,6 +1,8 @@
 # grafana-backup-docker
 A Docker container that has https://github.com/ysde/grafana-backup-tool
 
+Much thanks to @ysde for such a great tool!
+
 This repository is for a Docker image that is meant to be deployed on Kubernetes as a [cron job](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) that runs against a [Grafana](https://grafana.com/) instance that is also deployed on Kubernetes. But it could be used outside of Kubernetes as well.
 
 When run, this Docker image will clone the https://github.com/ysde/grafana-backup-tool repo and use it to backup all Grafana data to an S3 bucket.
